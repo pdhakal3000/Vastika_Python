@@ -1,4 +1,3 @@
-
 msg = "Hello world"
 print(msg)
-msg.lower()
+print("Hello World wats up")
