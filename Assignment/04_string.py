@@ -21,7 +21,6 @@ Please read the note carefully and try to solve the problem below:
    d. use %s formatting method to achieve the same result
 """
 import math
-from uuid import NAMESPACE_URL
 
 # answer 1
 # 1.a
@@ -74,15 +73,15 @@ print(f"The value of  the PI is :  {PI:10.2f}")
 
 # answer 3
 #a.
-print("Print your name and age in the console please")
-name = input("Hello there what is your name:")
-print(f"Thank you so much {name}" )
+print("Print your name and age in the console please", end = '\n')
+name = input("Hello there ! what is your name: ")
+print(f"Thank you so much {name}", end = '\n')
 
 #b.
-age = input(f"Would you mind to mention your age please!:" )
+age = int(input(f"Would you mind to mention your age please!:" ))
 
 #c.
-print(f"Thank you {name}. You are all set! let me know anything I messed up. So far you gave your name: {name} and age:{age} years")
+print(f"Thank you {name}.\n You are all set! let me know anything I messed up.\n So far you gave your name: {name} and age:{age} years")
 print("Have a good day.")
 
 # %%
