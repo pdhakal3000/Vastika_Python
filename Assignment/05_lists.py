@@ -24,6 +24,7 @@ Please read the note carefully and try to solve the problem below:
     e. now remove the second item using `pop()` method and see if the item exists in the list
         - you can print the list before and after using the `pop()` method.
 """
+#%%
 # answer 1
 # a
 my_list = []
@@ -31,28 +32,29 @@ my_list.append(5)
 my_list.append(9)
 print(f"List after appending given integer is : {my_list} \n")
 
+#%%
 # b
 print("Enter integer in the : ")
 x = int(input())
 my_list.append(x)
 print(f"\nlist after adding integer form the console is : {my_list} \n")
 
-
+#%%
 # c
 more_items = [20, 30, 40]
 my_list.extend(more_items)
 print(f"list extending with more items is: {my_list} \n")
 
-
+#%%
 # d
 print(f"The length of the my_list is: {len(my_list)} \n")
 
-
+#%%
 # e
 print(f"list before poping out an element: {my_list} \n")
 (my_list.pop(1))
 print(f"The final list after removing an element : {my_list} \n")
-
+#%%
 """
 2. Write a program to add 5 different wild animals to a list named `wild`.
     - tiger, lion, deer, bear, zebra
@@ -72,6 +74,7 @@ print(f"The final list after removing an element : {my_list} \n")
 
     note: you can print the values of list after each successful operations to see what is being changed.
 """
+#%%
 # answer 2
 # a
 wild = ["tiger", "lion", "deer", "bear", "zebra"]
@@ -79,15 +82,18 @@ print(f"The list of wild animals {wild} \n")
 wild.sort()
 print(f"sorted list of the wild animal list: {wild} \n")
 
+#%%
 # b
 wild.reverse()
 print(f"Reverse of the wild animal list is : {wild} \n")
 
+#%%
 # c
 extra_animal = ['leopard', 'elephant', 'rhino']
 wild = wild.__add__(extra_animal)
 print(f" The list after adding extra three animals is : {wild} \n")
 
+#%%
 # d
 leo_index = (wild.index('leopard'))
 print(f"The index of the leopard in the list is {leo_index} \n")
@@ -96,16 +102,17 @@ print(f"The list after pop-out leo from the list is : {wild}\n")
 
 #print("Checking presence of the loopard in the list")
 #leo_index = (wild.index('leopard'))
-
+#%%
 # e
 wild.insert(2,'leopard')
 #print(wild)
-print(f"Inserting leopard in the index number 2 in the wil animal list : {wild}\n")
-
+print(f"Inserting leopard in the index number 2 in the wild animal list : {wild}\n")
+#%%
 # f
 wild.remove('rhino')
 print(f"List after removing rhino form the wild list is : {wild}\n")
 
+#%%
 """
 3. Try creating a multi-dimensional list or nested list `multi` of different numbers.
     eg: [[12,52,37],[46,51,16],[17,82,39]]
@@ -118,6 +125,8 @@ print(f"List after removing rhino form the wild list is : {wild}\n")
         - Bonus: try using nested foreach to access each item inside of the inner list
     e. finally clear the list `multi` using the `clear()` method and verify if the list is empty or not
 """
+
+#%%
 # answer 3
 list1 = [12, 52, 37]
 list2 = [46, 51, 16]
@@ -125,26 +134,33 @@ list3 = [17, 82, 39]
 #multi = [*list1, *list2, *list3] It is for a single list from multiple list.
 multi = [list1, list2, list3] # Single list with multiple list or nested list from list.
 print (f"The nested list multi is: {multi} \n")
+
+#%%
 # a
 print(f"Accesing 51 from the list : ", multi[1][1], end='\n')
 #print(multi.index(51)) does not work because 51 is element of the nested list.
 
-
+#%%
 # b
 print(f"Acessing 82 from the list: ", multi[-1][-2], end='\n')
 
+#%%
 # c
 multi.append([40, 61, 10])
 print(f"\nlist after appendig given list is: \n {multi} \n")
 
+#%%
 # d
 print("Exposing list of nested list - \n")
 for list in multi:
-    print(list)
-
+    print(f'\nThis was one of the list inside nested list "multi": {list}')
+    print(f'These are correspnding elements in list:')
+    for i in list:
+        print(f'{i}')
+     
 
 #[[(a+b) for b in range(3)] for a in range(3)]
-
+#%%
 # e
 multi.clear()
 print(f" \n The list \" multi\" after clear function is empty: {multi} \n")
