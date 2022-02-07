@@ -20,10 +20,12 @@ Please read the note carefully and try to solve the problem below:
 #%% 1a create a variable <odd> with hinting as `int` and assign a value to it.
 
 odd:int = 10
+print(type(odd))
 
 #%%Answer 1b create a variable <PI> with hinting as `float` and assign 3.1415 to it.
 
 PI: float = 3.1415
+print(type(PI))
 
 #%% Answer 1c
 string:str = 5 # integer 5 is hinted as str
@@ -31,7 +33,8 @@ print(string) # just printing output
 print(type(string)) # Checking type of the variable string.
 
 # Hinting in python programming is not forcefull to do whatever we hint rather 
-# it goes with its own internal guidence and recognise the type of value and process accordingly further.
+# it goes with its own internal guidence and recognise the type of value and 
+# process accordingly further. It does not give any error but prceeds as an integer.
 
 #%%
 """
@@ -41,7 +44,7 @@ print(type(string)) # Checking type of the variable string.
 #%%
 PI = 3.1415
 # I want to print the value of PI to be 3. How should I convert the data to an integer
-PI_int = int(PI)
+PI_int = int(PI)# This is oe of the way to convert float to int.
 print(PI_int)
 # ----------------------------------------[ b ]-----------------------------------------------
 #%%
