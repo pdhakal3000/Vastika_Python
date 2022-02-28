@@ -3,6 +3,10 @@
 
 Pattern Generation Exercises
 """
+'''
+I have included list comprehension part of the question number 7 of the assignment 12 in this assignment.
+'''
+
 
 # Write programs to generate following patterns
 
